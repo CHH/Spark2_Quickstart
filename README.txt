@@ -13,4 +13,6 @@ Beachte: Spark2 ist als Git Submodule eingefügt, d.h. wenn du dieses Repository
 musst du "git submodule init" & "git submodule update" ausführen, damit Spark2
 heruntergeladen wird.
 
+Bitte die Spark2_Quickstart_vX.Y.Z.zip Datei herunterladen!
+
 Viel Spaß!

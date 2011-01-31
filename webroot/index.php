@@ -2,7 +2,7 @@
 
 use Spark\App, Spark\HttpRequest, Spark\HttpResponse;
 
-define("WEB_ROOT"    __DIR__);
+define("WEB_ROOT",   __DIR__);
 define("APP_ROOT",   realpath(WEB_ROOT . "/../"));
 define("LIB",        APP_ROOT . "/lib");
 define("SPARK_PATH", LIB . "/Spark/lib");

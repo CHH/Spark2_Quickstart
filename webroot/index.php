@@ -1,7 +1,5 @@
 <?php
 
-use Spark\App, Spark\HttpRequest, Spark\HttpResponse;
-
 define("WEB_ROOT",   __DIR__);
 define("APP_ROOT",   realpath(WEB_ROOT . "/../"));
 define("LIB",        APP_ROOT . "/lib");

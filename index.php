@@ -12,7 +12,7 @@ require_once SPARK_PATH . "/Spark.php";
 
 $app = new App;
 
-$app->routes->get("/", function() {
+$app->route()->get("/", function() {
     echo "<p><em>Spark</em> says: </p><h1>It works!</h1>";
 });
 

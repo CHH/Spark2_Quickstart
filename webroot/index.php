@@ -6,7 +6,7 @@ define("LIB",        APP_ROOT . "/lib");
 define("SPARK_PATH", LIB . "/Spark/lib");
 
 // Load the Dev Version
-require_once SPARK_PATH . "/lib/Spark.php";
+require_once SPARK_PATH . "/Spark.php";
 
 // Require the app
 require_once APP_ROOT . "/app.php";

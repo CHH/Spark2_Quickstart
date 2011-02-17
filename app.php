@@ -4,9 +4,10 @@
  */
 
 // Register some route
-Spark()->route(function($routes) {
+Spark()->route(function($r) {
+
     // Match the server root
-    $routes->get("/", function() {
+    $r->match("/", function() {
         echo "<p><em>Spark</em> says</p>";
         echo "<h1>Hello World!</h1>";
     });

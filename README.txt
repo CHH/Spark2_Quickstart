@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 Spark2 Quickstart
 =================
 
@@ -19,11 +18,3 @@ Bitte die Spark2_Quickstart_vX.Y.Z.zip Datei herunterladen!
 =============
 
 Viel Spaß!
-=======
-# Willkommen zu Spark2
-
-Spark ist ein MVC Framework für PHP 5.3+. Es ist bewusst einfach gehalten, ganz nach dem Prinzip "Code for today".
-Es ist Open-Source und steht unter der MIT Lizenz.
-
-Mehr (z.B. das Hello World Tutorial) gibts im Wiki (https://github.com/CHH/Spark2/wiki).
->>>>>>> 1a1eb615f1e252c5d74c0cabc7c9f415ad4996ce

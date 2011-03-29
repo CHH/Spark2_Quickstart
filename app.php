@@ -36,5 +36,5 @@ get("/google", redirectTo("http://google.com"));
 after(function($request, $response) {
     $content = $response->getContent();
     
-    $response->setContent(phtml("layout", array("content" => $content))->getContent());
+    $response->setContent(helpers()->phtml("layout", array("content" => $content))->getContent());
 });

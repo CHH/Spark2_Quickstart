@@ -5,36 +5,41 @@
 
 namespace Spark;
 
-set("views", APP_ROOT . "/templates");
+$app = new Application;
+$h   = $app->helpers;
+
+$app->set("views", APP_ROOT . "/templates");
 
 // Match the server root
-get("/", array("user_agent" => "/(Chromium|Chrome)/"), function() {
+$app->get("/", array("user_agent" => "/(Chromium|Chrome)/"), function() {
     return "<h1>Hello Chrome!</h1>";
 });
 
-get("/", array("user_agent" => "/Firefox/"), function() {
+$app->get("/", array("user_agent" => "/Firefox/"), function() {
     return "<h1>Hello Firefox!</h1>";
 });
 
-get("/teapot_endpoint", function() {
+$app->get("/teapot_endpoint", function() {
     return 418;
 });
 
-get("/not_there", function($request) {
+$app->get("/not_there", function() {
     halt(404);
 });
 
-notFound(function() {
+$app->notFound(function() {
     echo "Not found";
 });
 
-get("/google", redirectTo("http://google.com"));
+$app->get("/google", $app->redirectTo("http://google.com"));
 
 /*
  * Render the layout
  */
-after(function($request, $response) {
-    $content = $response->getContent();
-    
-    $response->setContent(phtml("layout", array("content" => $content))->getContent());
+$app->after(function($req, $resp) use ($app, $h) {
+    $response = $app->response();
+    $content  = $response->getContent();
+
+    $response->setContent($h->phtml("layout", array("content" => $content))->getContent());
 });
+

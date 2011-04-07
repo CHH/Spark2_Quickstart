@@ -1,3 +1,0 @@
-[submodule "lib/Spark"]
-	path = lib/Spark
-	url = git://github.com/CHH/Spark2.git

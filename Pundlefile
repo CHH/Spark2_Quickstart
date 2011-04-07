@@ -1,0 +1,11 @@
+description: "Spark2 Project Template"
+
+dependencies:
+    -
+        name: "Spark_Http_Server"
+        type: "repository"
+        vcs: "git"
+        repository: "git://github.com/CHH/HTTP_Server"
+        target: "lib/Spark_Http_Server"
+        upgrade: true
+        
